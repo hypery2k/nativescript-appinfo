@@ -1,6 +1,6 @@
 {
   "name": "nativescript-appinfo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read the app details of your NativeScript app",
   "main": "appinfo.js",
   "nativescript": {
