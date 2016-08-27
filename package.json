@@ -1,8 +1,8 @@
 {
-  "name": "nativescript-appversion",
-  "version": "1.2.0",
-  "description": "Read the version of your NativeScript app",
-  "main": "appversion.js",
+  "name": "nativescript-appinfo",
+  "version": "0.1.0",
+  "description": "Read the app details of your NativeScript app",
+  "main": "appinfo.js",
   "nativescript": {
     "platforms": {
       "ios": "1.1.0",
@@ -11,16 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eddyverbruggen/nativescript-appversion.git"
+    "url": "https://github.com/hypery2k/nativescript-appinfo.git"
   },
   "keywords": [
     "NativeScript",
     "App Version",
+    "App Bundle",
     "Version",
     "CFBundleShortVersionString"
   ],
-  "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
+  "author": "Martin Reinhardt",
+  "contributors": [
+    {
+      "name": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)"
+    }
+  ],
   "license": "MIT",
-  "bugs": "https://github.com/eddyverbruggen/nativescript-appversion/issues",
-  "homepage": "https://github.com/eddyverbruggen/nativescript-appversion"
+  "bugs": "https://github.com/hypery2k/nativescript-appinfo/issues",
+  "homepage": "https://github.com/hypery2k/nativescript-appinfo"
 }

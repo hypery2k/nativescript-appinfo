@@ -21,3 +21,16 @@ exports.getVersionName = function() {
     }
   });
 };
+
+var BUILD_KEY = "CFBundleVersion";
+
+exports.getBuildNumber = function() {
+  return new Promise(function(resolve, reject) {
+    try {
+      resolve(NSBundle.mainBundle().infoDictionary.objectForKey(BUILD_KEY));
+    } catch (ex) {
+      console.log("Error in appversion.getBuildNumber: " + ex);
+      reject(ex);
+    }
+  });
+};
