@@ -1,3 +1,8 @@
+/**
+ * ORDER is IMPORTANT, first the exports without dependencies, then all in descending order!!
+ */
+export * from './platform-details';
+
 declare module "nativescript-appinfo" {
     /**
      * Returns the version of your app.
