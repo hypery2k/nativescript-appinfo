@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "Read the app details of your NativeScript app",
   "main": "appinfo.js",
+  "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
       "ios": "1.1.0",
