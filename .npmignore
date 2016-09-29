@@ -6,4 +6,3 @@ dist
 tmp
 target
 *.log
-platform-details.js*

@@ -1,9 +1,14 @@
 /**
  * ORDER is IMPORTANT, first the exports without dependencies, then all in descending order!!
  */
-export * from './platform-details';
+import PlatformDetails from "./platform-details";
 
 declare module "nativescript-appinfo" {
+    /**
+     * Returns platform details
+     */
+    export function getPlatformDetails(): PlatformDetails;
+
     /**
      * Returns the version of your app.
      * - For iOS we read it from *.plist's CFBundleShortVersionString.

@@ -14,13 +14,13 @@
   },
   "nativescript": {
     "platforms": {
-      "ios": "1.1.0",
-      "android": "1.1.0"
+      "ios": "2.3.0",
+      "android": "2.3.0"
     }
   },
   "dependencies": {
-    "tns-core-modules": "^1.1.0",
-    "tns-core-modules-widgets": "^1.1.0"
+    "tns-core-modules": "^2.3.0",
+    "tns-core-modules-widgets": "^2.3.0"
   },
   "devDependencies": {
     "@types/core-js": "0.9.28",

@@ -1,5 +1,5 @@
 var application = require("application");
-var PlatformDetails = require("./platform-details").PlatformDetails;
+var PlatformDetails = require("./platform-details");
 
 exports.getPlatformDetails = function () {
     return new PlatformDetails();
