@@ -3,7 +3,7 @@ properties properties: [
         [$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/hypery2k/nativescript-appinfo'],
 ]
 
-node('android') {
+node('nativescript') {
     def buildNumber = env.BUILD_NUMBER
     def mvnHome = '/opt/dev/apache-maven-3.3.1'
     def workspace = env.WORKSPACE
