@@ -27,6 +27,11 @@ Run the following command from the root of your project:
 ```
 tns plugin add nativescript-appinfo
 ```
+Or if you want to use the development version (nightly build), which maybe not stable!:
+
+```
+tns plugin add nativescript-appinfo@next
+```
 
 ## Usage
 
