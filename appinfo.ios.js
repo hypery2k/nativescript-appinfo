@@ -23,7 +23,7 @@ exports.getVersionName = function () {
     return new Promise(function (resolve, reject) {
         try {
             var mainBundle = utils.ios.getter(NSBundle, NSBundle.mainBundle);
-            resolve(mainBundle).infoDictionary.objectForKey(VERSION_KEY);
+            resolve(mainBundle.infoDictionary.objectForKey(VERSION_KEY));
         } catch (ex) {
             console.log("Error in appversion.getVersionName: " + ex);
             reject(ex);
