@@ -10,7 +10,14 @@
         "test-ios": "tns test ios --emulator --justlaunch",
         "test-android": "tns test android --emulator --justlaunch --timeout 60000",
         "tsc": "tsc",
-        "tslint": "tslint \"app/**/*.ts\""
+        "tslint": "tslint \"app/**/*.ts\"",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+        "changelog:add": "git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md'",
+        "release:pre": "npm run clean && npm run test",
+        "release:post": "npm run changelog && npm run changelog:add",
+        "release:major": "npm run release:pre && npm version major && npm run release:post && git push origin && git push origin --tags && npm publish",
+        "release:minor": "npm run release:pre && npm version minor && npm run release:post && git push origin && git push origin --tags && npm publish",
+        "release:patch": "npm run release:pre && npm version patch && npm run release:post && git push origin && git push origin --tags && npm publish"
     },
     "nativescript": {
         "platforms": {
@@ -23,13 +30,11 @@
         "tns-core-modules-widgets": "^2.3.0"
     },
     "devDependencies": {
-        "@types/core-js": "0.9.28",
         "@types/jasmine": "2.2.29",
-        "@types/source-map": "0.1.26",
-        "@types/uglify-js": "2.0.27",
         "babel-traverse": "6.8.0",
         "babel-types": "6.8.1",
         "babylon": "6.8.0",
+        "conventional-changelog-cli": "1.2.0",
         "cross-env": "1.0.8",
         "filewalker": "0.1.2",
         "fs": "0.0.2",
@@ -39,9 +44,6 @@
         "karma-junit-reporter": "1.1.0",
         "karma-nativescript-launcher": "0.4.0",
         "karma-typescript-preprocessor": "0.2.1",
-        "nativescript-dev-sass": "0.3.0",
-        "nativescript-dev-typescript": "0.3.2",
-        "nativescript-dev-webpack": "0.0.20",
         "tslint": "3.15.1",
         "tslint-eslint-rules": "1.3.0",
         "typescript": "2.0.2"
