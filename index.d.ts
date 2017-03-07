@@ -29,4 +29,6 @@ declare module "nativescript-appinfo" {
      * - For Android we read the versionName from AndroidManifest.xml.
      */
     export function getBuildNumber(): Promise<string>;
+
+    export const PlatformDetails;
 }
