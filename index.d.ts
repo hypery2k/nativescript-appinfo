@@ -30,5 +30,6 @@ declare module "nativescript-appinfo" {
      */
     export function getBuildNumber(): Promise<string>;
 
-    export const PlatformDetails;
 }
+
+export type PlatformDetails = PlatformDetails;
