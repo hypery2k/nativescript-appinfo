@@ -1,12 +1,13 @@
-var PlatformDetails = require("./platform-details"),
-    utils = require("utils/utils");
+/// <reference path="node_modules/tns-platform-declarations/ios/ios.d.ts" />
+import { PlatformDetails } from "./platform-details";
+import * as utils from "utils/utils";
+import "./appinfo.common";
 
-exports.getPlatformDetails = function () {
-    return new PlatformDetails();
-};
+const VERSION_KEY = "CFBundleShortVersionString";
+const BUILD_KEY = "CFBundleVersion";
 
-exports.getAppId = function () {
-    return new Promise(function (resolve, reject) {
+export function getAppId(): Promise<any> {
+    return new Promise((resolve, reject) => {
         try {
             var mainBundle = utils.ios.getter(NSBundle, NSBundle.mainBundle);
             resolve(mainBundle.bundleIdentifier);
@@ -17,10 +18,8 @@ exports.getAppId = function () {
     });
 };
 
-var VERSION_KEY = "CFBundleShortVersionString";
-
-exports.getVersionName = function () {
-    return new Promise(function (resolve, reject) {
+export function getVersionName(): Promise<any> {
+    return new Promise((resolve, reject) => {
         try {
             var mainBundle = utils.ios.getter(NSBundle, NSBundle.mainBundle);
             resolve(mainBundle.infoDictionary.objectForKey(VERSION_KEY));
@@ -31,10 +30,8 @@ exports.getVersionName = function () {
     });
 };
 
-var BUILD_KEY = "CFBundleVersion";
-
-exports.getBuildNumber = function () {
-    return new Promise(function (resolve, reject) {
+export function getBuildNumber(): Promise<any> {
+    return new Promise((resolve, reject) => {
         try {
             var mainBundle = utils.ios.getter(NSBundle, NSBundle.mainBundle);
             resolve(mainBundle.infoDictionary.objectForKey(BUILD_KEY));

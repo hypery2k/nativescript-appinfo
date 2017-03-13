@@ -1,12 +1,9 @@
-var application = require("application");
-var PlatformDetails = require("./platform-details");
+import { PlatformDetails } from "./platform-details";
+import * as application from "application";
+import "./appinfo.common";
 
-exports.getPlatformDetails = function () {
-    return new PlatformDetails();
-};
-
-exports.getAppId = function () {
-    return new Promise(function (resolve, reject) {
+export function getAppId(): Promise<any> {
+    return new Promise((resolve, reject) => {
         function _resolve() {
             var context = application.android.context;
             resolve(context.getPackageName());
@@ -26,8 +23,8 @@ exports.getAppId = function () {
     });
 };
 
-exports.getVersionName = function () {
-    return new Promise(function (resolve, reject) {
+export function getVersionName(): Promise<any> {
+    return new Promise((resolve, reject) => {
         function _resolve() {
             var context = application.android.context;
             var packageManager = context.getPackageManager();
@@ -48,8 +45,8 @@ exports.getVersionName = function () {
     });
 };
 
-exports.getBuildNumber = function () {
-    return new Promise(function (resolve, reject) {
+export function getBuildNumber(): Promise<any> {
+    return new Promise((resolve, reject) => {
         function _resolve() {
             var context = application.android.context;
             var packageManager = context.getPackageManager();

@@ -6,4 +6,6 @@ dist
 tmp
 target
 *.log
-platform-details.js*
+*.d.ts
+*.js
+*.js.map
