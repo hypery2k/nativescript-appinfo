@@ -6,8 +6,10 @@ For iOS we read it from `*.plist`'s `CFBundleShortVersionString`.
 
 For Android we read the `versionName` from `AndroidManifest.xml`.
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hypery2k/nativescript-appinfo.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/hypery2k/nativescript-appinfo.svg?branch=master)](https://travis-ci.org/hypery2k/nativescript-appinfo)
 [![Build Status](https://martinreinhardt-online.de/jenkins/buildStatus/icon?job=NPM/nativescript-appinfo/master)](https://martinreinhardt-online.de/jenkins/job/NPM/job/nativescript-appinfo/job/master/)
+
 [![NPM](https://nodei.co/npm/nativescript-appinfo.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-appinfo/)
 
 > Feel free to **donate**
