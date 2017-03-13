@@ -6,4 +6,5 @@ dist
 tmp
 target
 *.log
+*.ts
 !*.d.ts
