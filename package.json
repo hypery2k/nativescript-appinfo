@@ -1,12 +1,12 @@
 {
   "name": "nativescript-appinfo",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "Read the app details of your NativeScript app",
   "main": "appinfo",
   "typings": "index.d.ts",
   "scripts": {
     "clean": "rimraf hooks platforms",
-    "build":"npm run tslint && npm run tsc",
+    "build": "npm run tslint && npm run tsc",
     "ios": "tns run ios --emulator --bundle",
     "test": "npm run tslint",
     "test-ios": "tns test ios --emulator --justlaunch",
@@ -27,8 +27,7 @@
       "android": "2.3.0"
     }
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "tns-core-modules": "^2.3.0",
     "tns-core-modules-widgets": "^2.3.0"
