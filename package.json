@@ -6,6 +6,7 @@
   "typings": "index.d.ts",
   "scripts": {
     "clean": "rimraf hooks platforms",
+    "build":"npm run tslint && npm run tsc",
     "ios": "tns run ios --emulator --bundle",
     "test": "npm run tslint",
     "test-ios": "tns test ios --emulator --justlaunch",
