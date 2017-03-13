@@ -22,7 +22,7 @@ node('nativescript') {
         }
 
         stage('Build') {
-            sh "npm install"
+            sh "npm install && npm run build"
         }
 
         stage('Test') {
