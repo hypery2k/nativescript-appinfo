@@ -4,7 +4,7 @@ import * as platformModule from "platform";
  * Helper class to ease the gathering of platform information
  * @author Martin Reinhardt (contact@martinreinhardt-online.de)
  */
-export default class PlatformDetails {
+export class PlatformDetails {
 
     private ios: boolean;
     private android: boolean;

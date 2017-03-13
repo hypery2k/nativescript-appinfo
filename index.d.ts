@@ -1,7 +1,7 @@
 /**
  * ORDER is IMPORTANT, first the exports without dependencies, then all in descending order!!
  */
-import PlatformDetails from "./platform-details";
+import { PlatformDetails } from "./platform-details";
 
 declare module "nativescript-appinfo" {
     /**
@@ -32,4 +32,4 @@ declare module "nativescript-appinfo" {
 
 }
 
-export type PlatformDetails = PlatformDetails;
+export { PlatformDetails } from "./platform-details";
