@@ -1,3 +1,14 @@
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/hypery2k/nativescript-appinfo/compare/v0.3.0...v0.3.1) (2017-03-14)
+
+
+### Bug Fixes
+
+* **build:** Corrected CI build ([15b4155](https://github.com/hypery2k/nativescript-appinfo/commit/15b4155))
+* **build-error:** Corrected CI build ([410a3fa](https://github.com/hypery2k/nativescript-appinfo/commit/410a3fa))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/hypery2k/nativescript-appinfo/compare/v0.2.5...v0.3.0) (2017-03-13)
 
