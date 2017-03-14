@@ -1,6 +1,7 @@
 import { PlatformDetails } from "./platform-details";
 import * as application from "application";
-import "./appinfo.common";
+export { PlatformDetails } from "./platform-details";
+export { getPlatformDetails } from "./appinfo.common";
 
 export function getAppId(): Promise<any> {
     return new Promise((resolve, reject) => {

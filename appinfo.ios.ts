@@ -1,7 +1,8 @@
 /// <reference path="node_modules/tns-platform-declarations/ios/ios.d.ts" />
 import { PlatformDetails } from "./platform-details";
 import * as utils from "utils/utils";
-import "./appinfo.common";
+export { PlatformDetails } from "./platform-details";
+export { getPlatformDetails } from "./appinfo.common";
 
 const VERSION_KEY = "CFBundleShortVersionString";
 const BUILD_KEY = "CFBundleVersion";
