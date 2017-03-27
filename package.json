@@ -56,6 +56,8 @@
         "karma-junit-reporter": "1.1.0",
         "mockery": "2.0.0",
         "rimraf": "2.6.1",
+        "tns-core-modules": "2.5.2",
+        "tns-platform-declarations": "2.5.2",
         "tslint": "3.15.1",
         "tslint-eslint-rules": "2.1.0",
         "typescript": "2.0.8"
