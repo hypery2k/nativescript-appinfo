@@ -1,3 +1,19 @@
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/hypery2k/nativescript-appinfo/compare/v0.3.1...v0.3.2) (2017-03-27)
+
+
+### Bug Fixes
+
+* **build-error:** Solve packing error ([956f0f2](https://github.com/hypery2k/nativescript-appinfo/commit/956f0f2))
+
+
+### Features
+
+* **unit-tests:** Adding basic unit tests ([8fc5f7f](https://github.com/hypery2k/nativescript-appinfo/commit/8fc5f7f))
+* **unit-tests:** Adding basic unit tests ([ebde467](https://github.com/hypery2k/nativescript-appinfo/commit/ebde467))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/hypery2k/nativescript-appinfo/compare/v0.3.0...v0.3.1) (2017-03-14)
 
