@@ -34,8 +34,8 @@
     },
     "dependencies": {},
     "peerDependencies": {
-        "tns-core-modules": "^2.3.0",
-        "tns-core-modules-widgets": "^2.3.0"
+        "tns-core-modules": ">=2.3.0 || >= 3.0.0",
+        "tns-core-modules-widgets": ">=2.3.0 || >= 3.0.0"
     },
     "devDependencies": {
         "@types/jasmine": "2.5.37",
