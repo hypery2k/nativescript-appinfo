@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/hypery2k/nativescript-appinfo/compare/v0.3.2...v0.4.0) (2017-05-22)
+
+
+### Features
+
+* **NativeScript 3:** Support nativescript 3 as dependency ([5626ff9](https://github.com/hypery2k/nativescript-appinfo/commit/5626ff9))
+
+
+
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/hypery2k/nativescript-appinfo/compare/v0.3.1...v0.3.2) (2017-03-27)
 
