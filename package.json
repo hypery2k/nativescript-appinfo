@@ -1,83 +1,85 @@
 {
-    "name": "nativescript-appinfo",
-    "version": "0.3.2",
-    "description": "Read the app details of your NativeScript app",
-    "main": "appinfo",
-    "typings": "index.d.ts",
-    "scripts": {
-        "preclean": "npm i rimraf",
-        "clean": "rimraf node_modules hooks platforms target *.js.map",
-        "postclean": "npm i",
-        "build": "npm run tslint && npm run tsc",
-        "ios": "tns run ios --emulator --bundle",
-        "test": "npm run tslint && npm run jasmine",
-        "jasmine": "babel-node spec/run.js",
-        "test-ios": "tns test ios --emulator --justlaunch",
-        "test-android": "tns test android --emulator --justlaunch --timeout 60000",
-        "tsc": "tsc",
-        "tslint": "tslint \"app/**/*.ts\"",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-        "changelog:add": "git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md'",
-        "release:pre": "npm run clean && npm run test",
-        "release:post": "npm run changelog && npm run changelog:add",
-        "release:major": "npm run release:pre && npm version major && npm run release:post && npm run version-and-push",
-        "release:minor": "npm run release:pre && npm version minor && npm run release:post && npm run version-and-push",
-        "release:patch": "npm run release:pre && npm version patch && npm run release:post && npm run version-and-push",
-        "version-and-push": "git push origin && git push origin --tags && npm run publish-and-merge",
-        "publish-and-merge": "git checkout master && git merge develop && git push && git checkout develop && npm publish"
-    },
-    "nativescript": {
-        "platforms": {
-            "ios": "2.3.0",
-            "android": "2.3.0"
-        }
-    },
-    "dependencies": {},
-    "peerDependencies": {
-        "tns-core-modules": ">=2.3.0 || >= 3.0.0",
-        "tns-core-modules-widgets": ">=2.3.0 || >= 3.0.0"
-    },
-    "devDependencies": {
-        "@types/jasmine": "2.5.37",
-        "babel-cli": "6.24.0",
-        "babel-core": "6.24.0",
-        "babel-preset-es2015": "6.24.0",
-        "babel-traverse": "6.18.0",
-        "babel-types": "6.18.0",
-        "babylon": "6.13.1",
-        "cross-env": "3.1.3",
-        "filewalker": "0.1.3",
-        "fs": "0.0.2",
-        "jasmine": "2.5.3",
-        "jasmine-core": "2.5.2",
-        "jasmine-reporters": "2.2.0",
-        "karma": "1.3.0",
-        "karma-jasmine": "1.0.2",
-        "karma-junit-reporter": "1.1.0",
-        "mockery": "2.0.0",
-        "rimraf": "2.6.1",
-        "tns-core-modules": "2.5.2",
-        "tns-platform-declarations": "2.5.2",
-        "tslint": "3.15.1",
-        "tslint-eslint-rules": "2.1.0",
-        "typescript": "2.0.8"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/hypery2k/nativescript-appinfo.git"
-    },
-    "keywords": [
-        "NativeScript",
-        "App Version",
-        "App Bundle",
-        "Version",
-        "CFBundleShortVersionString"
-    ],
-    "author": "Martin Reinhardt",
-    "contributors": [{
-        "name": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)"
-    }],
-    "license": "MIT",
-    "bugs": "https://github.com/hypery2k/nativescript-appinfo/issues",
-    "homepage": "https://github.com/hypery2k/nativescript-appinfo"
+  "name": "nativescript-appinfo",
+  "version": "0.4.0",
+  "description": "Read the app details of your NativeScript app",
+  "main": "appinfo",
+  "typings": "index.d.ts",
+  "scripts": {
+    "preclean": "npm i rimraf",
+    "clean": "rimraf node_modules hooks platforms target *.js.map",
+    "postclean": "npm i",
+    "build": "npm run tslint && npm run tsc",
+    "ios": "tns run ios --emulator --bundle",
+    "test": "npm run tslint && npm run jasmine",
+    "jasmine": "babel-node spec/run.js",
+    "test-ios": "tns test ios --emulator --justlaunch",
+    "test-android": "tns test android --emulator --justlaunch --timeout 60000",
+    "tsc": "tsc",
+    "tslint": "tslint \"app/**/*.ts\"",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog:add": "git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md'",
+    "release:pre": "npm run clean && npm run test",
+    "release:post": "npm run changelog && npm run changelog:add",
+    "release:major": "npm run release:pre && npm version major && npm run release:post && npm run version-and-push",
+    "release:minor": "npm run release:pre && npm version minor && npm run release:post && npm run version-and-push",
+    "release:patch": "npm run release:pre && npm version patch && npm run release:post && npm run version-and-push",
+    "version-and-push": "git push origin && git push origin --tags && npm run publish-and-merge",
+    "publish-and-merge": "git checkout master && git merge develop && git push && git checkout develop && npm publish"
+  },
+  "nativescript": {
+    "platforms": {
+      "ios": "2.3.0",
+      "android": "2.3.0"
+    }
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "tns-core-modules": ">=2.3.0 || >= 3.0.0",
+    "tns-core-modules-widgets": ">=2.3.0 || >= 3.0.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.5.37",
+    "babel-cli": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-preset-es2015": "6.24.0",
+    "babel-traverse": "6.18.0",
+    "babel-types": "6.18.0",
+    "babylon": "6.13.1",
+    "cross-env": "3.1.3",
+    "filewalker": "0.1.3",
+    "fs": "0.0.2",
+    "jasmine": "2.5.3",
+    "jasmine-core": "2.5.2",
+    "jasmine-reporters": "2.2.0",
+    "karma": "1.3.0",
+    "karma-jasmine": "1.0.2",
+    "karma-junit-reporter": "1.1.0",
+    "mockery": "2.0.0",
+    "rimraf": "2.6.1",
+    "tns-core-modules": "2.5.2",
+    "tns-platform-declarations": "2.5.2",
+    "tslint": "3.15.1",
+    "tslint-eslint-rules": "2.1.0",
+    "typescript": "2.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hypery2k/nativescript-appinfo.git"
+  },
+  "keywords": [
+    "NativeScript",
+    "App Version",
+    "App Bundle",
+    "Version",
+    "CFBundleShortVersionString"
+  ],
+  "author": "Martin Reinhardt",
+  "contributors": [
+    {
+      "name": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)"
+    }
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/hypery2k/nativescript-appinfo/issues",
+  "homepage": "https://github.com/hypery2k/nativescript-appinfo"
 }
