@@ -1,3 +1,18 @@
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/hypery2k/nativescript-appinfo/compare/v0.4.0...v0.4.1) (2017-06-01)
+
+
+### Bug Fixes
+
+* **npm-install-error:** Drop not needed widgets dependency ([f082cfe](https://github.com/hypery2k/nativescript-appinfo/commit/f082cfe))
+
+
+### Features
+
+* **typescript:** Update to typescript 2.3 ([1d60a72](https://github.com/hypery2k/nativescript-appinfo/commit/1d60a72))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/hypery2k/nativescript-appinfo/compare/v0.3.2...v0.4.0) (2017-05-22)
 
