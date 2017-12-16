@@ -9,6 +9,8 @@ For Android we read the `versionName` from `AndroidManifest.xml`.
 [![Greenkeeper badge](https://badges.greenkeeper.io/hypery2k/nativescript-appinfo.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/hypery2k/nativescript-appinfo.svg?branch=master)](https://travis-ci.org/hypery2k/nativescript-appinfo)
 [![Build Status](https://martinreinhardt-online.de/jenkins/buildStatus/icon?job=NPM/nativescript-appinfo/master)](https://martinreinhardt-online.de/jenkins/job/NPM/job/nativescript-appinfo/job/master/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8038a4491ae7c4222c77/maintainability)](https://codeclimate.com/github/hypery2k/nativescript-appinfo/maintainability)
+
 
 [![NPM](https://nodei.co/npm/nativescript-appinfo.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-appinfo/)
 
